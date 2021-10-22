@@ -1,0 +1,9 @@
+﻿**** SME **********************
+
+
+**** Write Scaffold **********************
+//Windows
+scaffold-DbContext "Data Source=SAYEEM;Initial Catalog=JWTAuthApiDB;Connect Timeout=30;Encrypt=False;TrustServerCertificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "Entities" -ContextDir "DbContexts" -Context "JWTAuthContext"    -f
+
+
+Scaffold-DbContext "Server=SAYEEM;Database=JWTAuthApiDB;Trusted_Connection=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -f
